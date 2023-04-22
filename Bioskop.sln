@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bioskop.Client", "Bioskop.UserInterface\Bioskop.Client.csproj", "{60355A6E-BB5B-4618-8A42-C4F462888A94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bioskop.Common", "Bioskop.Common\Bioskop.Common.csproj", "{A01252CA-3B7C-44CD-8B40-72A49540ECAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bioskop.Repository", "Bioskop.Repository\Bioskop.Repository.csproj", "{5FFD1EFD-24AE-42A1-B9B0-F641248B2F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bioskop.Server", "Bioskop.Server\Bioskop.Server.csproj", "{38C1B87E-73AF-42BB-9836-4BBF93316DEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bioskop.SystemOperations", "Bioskop.SystemOperations\Bioskop.SystemOperations.csproj", "{10556FE3-29D4-4950-A1CE-9511D2DF4F24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60355A6E-BB5B-4618-8A42-C4F462888A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60355A6E-BB5B-4618-8A42-C4F462888A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60355A6E-BB5B-4618-8A42-C4F462888A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60355A6E-BB5B-4618-8A42-C4F462888A94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A01252CA-3B7C-44CD-8B40-72A49540ECAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A01252CA-3B7C-44CD-8B40-72A49540ECAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A01252CA-3B7C-44CD-8B40-72A49540ECAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A01252CA-3B7C-44CD-8B40-72A49540ECAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFD1EFD-24AE-42A1-B9B0-F641248B2F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFD1EFD-24AE-42A1-B9B0-F641248B2F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFD1EFD-24AE-42A1-B9B0-F641248B2F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFD1EFD-24AE-42A1-B9B0-F641248B2F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C1B87E-73AF-42BB-9836-4BBF93316DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C1B87E-73AF-42BB-9836-4BBF93316DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C1B87E-73AF-42BB-9836-4BBF93316DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C1B87E-73AF-42BB-9836-4BBF93316DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10556FE3-29D4-4950-A1CE-9511D2DF4F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10556FE3-29D4-4950-A1CE-9511D2DF4F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10556FE3-29D4-4950-A1CE-9511D2DF4F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10556FE3-29D4-4950-A1CE-9511D2DF4F24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD15C8A7-2472-47C9-A000-417C9B84AB2B}
+	EndGlobalSection
+EndGlobal

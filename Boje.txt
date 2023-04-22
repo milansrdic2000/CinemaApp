@@ -1,0 +1,10 @@
+tamno plava, bordo pozadina: 26, 30, 45; #1a1e2d
+zuta: 244, 176, 122, font 12 velicina, regular
+alternativna boja pozadine: 26, 30, 42
+padding: 5
+
+selection color:
+selection font color:
+
+40 visina reda
+50 header visina

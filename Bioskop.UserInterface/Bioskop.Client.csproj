@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60355A6E-BB5B-4618-8A42-C4F462888A94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bioskop.UserInterface</RootNamespace>
+    <AssemblyName>Bioskop.UserInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormMode.cs" />
+    <Compile Include="GuiController\FilmGuiController.cs" />
+    <Compile Include="GuiController\KorisniciGuiController.cs" />
+    <Compile Include="GuiController\ProjekcijaGuiController.cs" />
+    <Compile Include="GuiController\RezervacijaGuiController.cs" />
+    <Compile Include="GuiController\SalaGuiController.cs" />
+    <Compile Include="MainCoordinator.cs" />
+    <Compile Include="CommunicationClient.cs" />
+    <Compile Include="FrmGlavna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGlavna.Designer.cs">
+      <DependentUpon>FrmGlavna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\BioskSalaUc\UcAllBioskopskeSale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\BioskSalaUc\UcAllBioskopskeSale.Designer.cs">
+      <DependentUpon>UcAllBioskopskeSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BioskSalaUc\UcSingleBioskopskaSala.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\BioskSalaUc\UcSingleBioskopskaSala.Designer.cs">
+      <DependentUpon>UcSingleBioskopskaSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FilmUc\UcSingleFilmView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FilmUc\UcSingleFilmView.Designer.cs">
+      <DependentUpon>UcSingleFilmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FilmUc\UcAllFilmView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FilmUc\UcAllFilmView.Designer.cs">
+      <DependentUpon>UcAllFilmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProjekcijeUc\UcAllProjekcijeFilma.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProjekcijeUc\UcAllProjekcijeFilma.Designer.cs">
+      <DependentUpon>UcAllProjekcijeFilma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProjekcijeUc\UcSingleProjekcijaFilma.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProjekcijeUc\UcSingleProjekcijaFilma.Designer.cs">
+      <DependentUpon>UcSingleProjekcijaFilma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RezervisanjeUc\UcAllRezervacije.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RezervisanjeUc\UcAllRezervacije.Designer.cs">
+      <DependentUpon>UcAllRezervacije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RezervisanjeUc\UcRezervisanje.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RezervisanjeUc\UcRezervisanje.Designer.cs">
+      <DependentUpon>UcRezervisanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RezervisanjeUc\UcOdabirSedista.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RezervisanjeUc\UcOdabirSedista.Designer.cs">
+      <DependentUpon>UcOdabirSedista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcProfileView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UcProfileView.Designer.cs">
+      <DependentUpon>UcProfileView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmGlavna.resx">
+      <DependentUpon>FrmGlavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\BioskSalaUc\UcAllBioskopskeSale.resx">
+      <DependentUpon>UcAllBioskopskeSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\BioskSalaUc\UcSingleBioskopskaSala.resx">
+      <DependentUpon>UcSingleBioskopskaSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FilmUc\UcSingleFilmView.resx">
+      <DependentUpon>UcSingleFilmView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FilmUc\UcAllFilmView.resx">
+      <DependentUpon>UcAllFilmView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProjekcijeUc\UcAllProjekcijeFilma.resx">
+      <DependentUpon>UcAllProjekcijeFilma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProjekcijeUc\UcSingleProjekcijaFilma.resx">
+      <DependentUpon>UcSingleProjekcijaFilma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RezervisanjeUc\UcAllRezervacije.resx">
+      <DependentUpon>UcAllRezervacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RezervisanjeUc\UcRezervisanje.resx">
+      <DependentUpon>UcRezervisanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RezervisanjeUc\UcOdabirSedista.resx">
+      <DependentUpon>UcOdabirSedista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UcProfileView.resx">
+      <DependentUpon>UcProfileView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bioskop.Common\Bioskop.Common.csproj">
+      <Project>{a01252ca-3b7c-44cd-8b40-72a49540ecaa}</Project>
+      <Name>Bioskop.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sedisteHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bioskopLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sumicaBioskop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sediste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zauzetoSediste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mojeZauzetoSediste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
